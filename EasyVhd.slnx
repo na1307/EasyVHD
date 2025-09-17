@@ -1,0 +1,15 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Folder Name="/솔루션 항목/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="EasyVHD.Shared/EasyVHD.Shared.csproj" />
+  <Project Path="EasyVHD/EasyVHD.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+</Solution>
